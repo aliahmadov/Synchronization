@@ -1,0 +1,154 @@
+﻿<Window x:Class="TransferMoney_Synchronization.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TransferMoney_Synchronization"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500" WindowStyle="None" AllowsTransparency="True"
+        Background="Transparent" WindowStartupLocation="CenterScreen">
+
+    <Border CornerRadius="10" Background="AliceBlue">
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="3.5*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right">
+
+                <Button Background="Transparent" BorderThickness="0">
+                    <Image Source="/Images/close.png" Width="40">
+                        <Image.InputBindings>
+                            <MouseBinding Gesture="LeftClick" Command="{Binding CloseCommand}">
+
+                            </MouseBinding>
+
+
+                        </Image.InputBindings>
+                    </Image>
+                </Button>
+            </StackPanel>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
+                    <Border Margin="0,5,0,0" Padding="40,5,40,5" BorderBrush="Black" BorderThickness="1">
+                        <TextBlock FontWeight="Bold" Foreground="OrangeRed" FontSize="45" FontFamily="Edwardian Script ITC">Transfer Money</TextBlock>
+                    </Border>
+                </StackPanel>
+
+
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Margin="10,0,0,0"  HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <TextBlock Margin="0,10,0,0" FontWeight="Bold">Enter Card Number</TextBlock>
+                        <TextBox   Width="200" MaxLength="16"
+                            FontWeight="DemiBold" FontSize="20" Text="{Binding CardNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                           >
+                        </TextBox>
+
+                        <TextBlock Margin="0,10,0,0" FontWeight="Bold">
+                    Enter Pin Code
+                        </TextBlock>
+                        <TextBox MaxLength="4" Margin="0,5,0,0"  Width="200"
+                            FontWeight="DemiBold" FontSize="20"  Text="{Binding PinCode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                           >
+                        </TextBox>
+                    </StackPanel>
+
+                    <StackPanel Margin="0,15,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1">
+                        <Button Content="Load Data" FontSize="30"
+                                Padding="10,5,10,5" Background="OrangeRed" Foreground="White"
+                                FontWeight="Bold" Command="{Binding LoadDataCommand}">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+
+
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="0,0,22,0" Text="Name" FontSize="16" FontWeight="Bold">
+                            </TextBlock>
+                            <Border Margin="10,0,0,0" Width="150" BorderThickness="1" BorderBrush="Black">
+                                <TextBlock Text="{Binding Name}" FontSize="16" FontWeight="DemiBold"></TextBlock>
+                            </Border>
+                        </StackPanel>
+
+                        <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                            <TextBlock Text="Surname" FontSize="16" FontWeight="Bold">
+                            </TextBlock>
+                            <Border Margin="10,0,0,0" Width="150" BorderThickness="1" BorderBrush="Black">
+                                <TextBlock Text="{Binding Surname}" FontSize="16" FontWeight="DemiBold"></TextBlock>
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
+                    <Grid Grid.Column="1">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <TextBlock FontSize="16" FontWeight="Bold">Enter Amount</TextBlock>
+                            <TextBox Width="50" Margin="10,0,0,0" FontSize="16" Text="{Binding Amount}"></TextBox>
+                            <TextBlock Margin="5,0,0,0" FontSize="16" FontWeight="Bold">$</TextBlock>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="2">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"
+                                Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal">
+                            <Border Margin="10,0,0,0"  BorderThickness="1" BorderBrush="Black">
+                                <TextBlock FontSize="25" FontWeight="DemiBold" TextAlignment="Center"
+                                           Text="{Binding From}"></TextBlock>
+                            </Border>
+                            <TextBlock Margin="5,0,5,0" FontSize="25" FontWeight="DemiBold">$</TextBlock>
+                        </StackPanel>
+                        <StackPanel>
+                            <Button FontSize="25" Background="OrangeRed" Foreground="White"
+                                    FontWeight="Bold" Padding="10,0,10,0">
+                                Transfer Money
+                                <Button.Resources>
+                                    <Style TargetType="Border">
+                                        <Setter Property="CornerRadius" Value="10"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Border Margin="10,0,0,0"  BorderThickness="1" BorderBrush="Black">
+                                <TextBlock FontSize="25" FontWeight="DemiBold"
+                                           Text="{Binding To}"></TextBlock>
+                            </Border>
+                            <TextBlock Margin="5,0,0,0" FontSize="25" FontWeight="DemiBold">$</TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

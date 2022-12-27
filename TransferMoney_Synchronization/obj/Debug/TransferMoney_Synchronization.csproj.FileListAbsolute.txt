@@ -1,0 +1,16 @@
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\bin\Debug\TransferMoney_Synchronization.exe.config
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\bin\Debug\TransferMoney_Synchronization.exe
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\bin\Debug\TransferMoney_Synchronization.pdb
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\obj\Debug\TransferMoney_Synchronization.csproj.AssemblyReference.cache
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\obj\Debug\TransferMoney_Synchronization.csproj.SuggestedBindingRedirects.cache
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\obj\Debug\App.g.cs
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\obj\Debug\TransferMoney_Synchronization_MarkupCompile.cache
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\obj\Debug\TransferMoney_Synchronization_MarkupCompile.lref
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\obj\Debug\TransferMoney_Synchronization.g.resources
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\obj\Debug\TransferMoney_Synchronization.Properties.Resources.resources
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\obj\Debug\TransferMoney_Synchronization.csproj.GenerateResource.cache
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\obj\Debug\TransferMoney_Synchronization.csproj.CoreCompileInputs.cache
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\obj\Debug\TransferMoney_Synchronization.exe
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\obj\Debug\TransferMoney_Synchronization.pdb
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\obj\Debug\Views\MainWindow.g.cs
+C:\Users\eliah\source\repos\TransferMoney_Synchronization\TransferMoney_Synchronization\obj\Debug\Views\MainWindow.baml
