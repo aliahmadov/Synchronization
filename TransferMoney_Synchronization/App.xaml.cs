@@ -26,7 +26,8 @@ namespace TransferMoney_Synchronization
                        Card=new BankCard
                        {
                             CardNumber="1234123412341234",
-                             PinCode="1234"
+                             PinCode="1234",
+                             Balance=4500
                        }
                 },
                   new User
@@ -36,7 +37,8 @@ namespace TransferMoney_Synchronization
                        Card=new BankCard
                        {
                             CardNumber="4321432143214321",
-                             PinCode="4321"
+                             PinCode="4321",
+                             Balance=1200
                        }
                 },
 

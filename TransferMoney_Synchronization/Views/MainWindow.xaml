@@ -112,7 +112,7 @@
                     <Grid Grid.Column="1">
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
                             <TextBlock FontSize="16" FontWeight="Bold">Enter Amount</TextBlock>
-                            <TextBox Width="50" Margin="10,0,0,0" FontSize="16" Text="{Binding Amount}"></TextBox>
+                            <TextBox Width="50" Margin="10,0,0,0" FontSize="16" Text="{Binding Amount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                             <TextBlock Margin="5,0,0,0" FontSize="16" FontWeight="Bold">$</TextBlock>
                         </StackPanel>
                     </Grid>
@@ -130,8 +130,9 @@
                         </StackPanel>
                         <StackPanel>
                             <Button FontSize="25" Background="OrangeRed" Foreground="White"
-                                    FontWeight="Bold" Padding="10,0,10,0">
-                                Transfer Money
+                                    FontWeight="Bold" Padding="10,0,10,0"
+                                     Command="{Binding TransferCommand}">
+                                Transfer
                                 <Button.Resources>
                                     <Style TargetType="Border">
                                         <Setter Property="CornerRadius" Value="10"/>

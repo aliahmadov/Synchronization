@@ -11,5 +11,7 @@ namespace TransferMoney_Synchronization.Models
         public string CardNumber { get; set; }
 
         public string PinCode { get; set; }
+
+        public double  Balance { get; set; }
     }
 }
